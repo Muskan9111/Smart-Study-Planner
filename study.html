@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Study Planner</title>
+    <link rel="stylesheet" href="study.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Smart Study Planner</h2>
+
+    <input type="text" id="subject" placeholder="Subject">
+
+    <select id="priority">
+        <option value="1">Easy</option>
+        <option value="1.5">Medium</option>
+        <option value="2">Hard</option>
+    </select>
+
+    <button onclick="addSubject()">Add</button>
+
+    <ul id="subjectList"></ul>
+
+    <input type="number" id="hours" placeholder="Total Hours">
+
+    <button onclick="generatePlan()">Generate Plan</button>
+
+    <div id="output"></div>
+</div>
+
+<script src="study.js"></script>
+
+</body>
+</html>
